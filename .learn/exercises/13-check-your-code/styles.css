@@ -1,0 +1,84 @@
+body {
+	background: black;
+}
+
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+
+p {
+	color: blue;
+}
+
+.postcard-header img {
+	width: 50px;
+	/* Ancho de la imagen */
+	height: auto;
+	/* Mantiene la proporción de la imagen */
+}
+
+.postcard-header h1 {
+	margin: 0;
+	/* Elimina el margen por defecto del h1 */
+	font-size: 24px;
+	/* Tamaño de fuente para el título */
+	color: #333;
+	/* Color del texto del título */
+}
+
+.postcard {
+	background: white;
+	/* Fondo blanco para la postal */
+	width: 400px;
+	/* Ancho de la postal */
+	height: 300px;
+	/* Alto de la postal */
+	margin: auto;
+	/* Centra la postal en la página */
+	border-radius: 10px;
+	/* Bordes redondeados para un mejor aspecto */
+	overflow: hidden;
+	/* Evita que el contenido se desborde de la postal */
+}
+
+.postcard-header {
+	display: flex;
+	/* Usa flexbox para alinear el título y la imagen */
+	justify-content: space-between;
+	/* Espacio entre el título y la imagen */
+	padding: 10px;
+	/* Espaciado interno */
+}
+
+.postcard-body {
+	display: flex;
+	padding: 10px; /* Espaciado interno para el cuerpo de la postal */
+}
+
+.body-left {
+	flex: 1; /* Toma el espacio restante */
+}
+
+.body-left p:first-child {
+	margin-top: none;
+}
+
+.body-right {
+	flex: 1; /* Toma el espacio restante */
+}
+
+.body-left,
+.body-right {
+	padding: 20px;
+}
+
+.postcard-footer {
+	text-align: center; /* Centra el texto del pie de la postal */
+	background-color: #333;
+	padding: 10px; /* Espaciado interno */
+}
+input {
+	border: none; /* Sin borde */
+	border-bottom: 1px solid grey; /* Borde inferior gris */
+}

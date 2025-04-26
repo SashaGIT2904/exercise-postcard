@@ -1,0 +1,94 @@
+body {
+	background: #111; /* Establece un fondo oscuro (#111) para toda la página */
+	display: flex; /* Utiliza Flexbox para el diseño del cuerpo */
+	justify-content: center; /* Centra horizontalmente los elementos dentro del body */
+	align-items: center; /* Centra verticalmente los elementos dentro del body */
+	height: 100vh; /* Hace que el body ocupe el 100% de la altura de la ventana del navegador */
+	margin: 0; /* Elimina el margen por defecto del body */
+	font-family: "Poppins", sans-serif; /* Establece la fuente Poppins para el texto */
+}
+
+* {
+	margin: 0; /* Elimina el margen por defecto de todos los elementos */
+	padding: 0; /* Elimina el padding por defecto de todos los elementos */
+	box-sizing: border-box; /* Cambia el modelo de caja para incluir padding y border en el ancho y alto total */
+}
+
+p {
+	color: #333; /* Establece el color del texto de los párrafos a un gris oscuro */
+	line-height: 1.5; /* Establece la altura de línea a 1.5 para mejorar la legibilidad */
+}
+
+.postcard {
+	background: #fff; /* Establece un fondo blanco para la postal */
+	width: 600px; /* Establece un ancho fijo de 600 píxeles para la postal */
+	min-height: 320px; /* Establece una altura mínima de 320 píxeles */
+	border-radius: 15px; /* Redondea las esquinas de la postal */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave alrededor de la postal */
+	overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+	display: flex; /* Utiliza Flexbox para el diseño interno de la postal */
+	flex-direction: column; /* Organiza los elementos hijos en una columna */
+	justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+	padding: 20px; /* Agrega un espacio interno de 20 píxeles alrededor del contenido de la postal */
+}
+
+.postcard-header {
+	display: flex; /* Utiliza Flexbox para el diseño del encabezado de la postal */
+	justify-content: space-between; /* Distribuye el espacio entre los elementos del encabezado */
+	align-items: center; /* Alinea verticalmente los elementos del encabezado */
+	margin-bottom: 10px; /* Agrega un margen inferior de 10 píxeles */
+}
+
+.postcard-header h1 {
+	font-size: 28px; /* Establece el tamaño de fuente del encabezado a 28 píxeles */
+	color: #222; /* Establece el color del texto del encabezado a un gris oscuro */
+}
+
+.postcard-header img {
+	width: 60px; /* Establece un ancho fijo de 60 píxeles para la imagen del encabezado */
+	height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.postcard-body {
+	display: flex; /* Utiliza Flexbox para el diseño del cuerpo de la postal */
+	gap: 20px; /* Agrega un espacio de 20 píxeles entre los elementos hijos */
+}
+
+.body-left,
+.body-right {
+	flex: 1; /* Permite que ambas columnas (izquierda y derecha) ocupen el mismo espacio disponible */
+}
+
+.body-right input {
+	width: 100%; /* Establece el ancho del campo de entrada al 100% de su contenedor */
+	padding: 8px 10px; /* Agrega un padding interno de 8 píxeles arriba y abajo, y 10 píxeles a los lados */
+	margin-bottom: 15px; /* Agrega un margen inferior de 15 píxeles */
+	border: 1px solid #ccc; /* Establece un borde gris claro alrededor del campo de entrada */
+	border-radius: 5px; /* Redondea las esquinas del campo de entrada */
+	outline: none; /* Elimina el contorno que aparece al seleccionar el campo */
+	transition: border-color 0.3s; /* Agrega una transición suave al color del borde */
+}
+
+.body-right input:focus {
+	border-color: #333; /* Cambia el color del borde a un gris oscuro cuando el campo de entrada está enfocado */
+}
+
+.postcard-footer {
+	text-align: center; /* Centra el texto dentro del pie de la postal */
+	margin-top: 20px; /* Agrega un margen superior de 20 píxeles */
+}
+
+button {
+	background-color: #333; /* Establece un fondo oscuro para el botón */
+	padding: 12px 25px; /* Agrega un padding interno de 12 píxeles arriba y abajo, y 25 píxeles a los lados */
+	color: white; /* Establece el color del texto del botón a blanco */
+	border: none; /* Elimina el borde por defecto del botón */
+	border-radius: 30px; /* Redondea las esquinas del botón */
+	cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+	font-size: 16px; /* Establece el tamaño de fuente del botón a 16 píxeles */
+	transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+
+button:hover {
+	background-color: #555; /* Cambia el color de fondo a un gris más claro cuando el mouse está sobre el botón */
+}
